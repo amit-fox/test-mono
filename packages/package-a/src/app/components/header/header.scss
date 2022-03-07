@@ -1,0 +1,160 @@
+.header {
+  background: #1a1a1a;
+  background: -webkit-linear-gradient(left, #222 , #000);
+  background: -o-linear-gradient(right, #222, #000);
+  background: -moz-linear-gradient(right, #222, #000);
+  background: linear-gradient(to right, #222 , #000);
+  color: #aaa;
+  position: fixed;
+}
+
+.header .logo {
+  width: 177px;
+  margin: 20px 0;
+}
+
+.header .nav-right {
+  float: right;
+}
+
+.header .nav-right ul {
+  text-align: right;
+}
+
+.header .nav-right li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 10px;
+  margin: 15px 0 10px 10px;
+}
+
+.header .nav-right li.divider {
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.header .nav-right li .refresh {
+  font-size: 16px;
+  position: relative;
+  left: 3px;
+  top: 4px;
+}
+
+.header .nav-right li .refresh:hover {
+  color: #fff;
+}
+
+.header .nav-right li a {
+  color: #aaa;
+}
+
+.header .nav-right li button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: 0 !important;
+}
+
+.header .nav-right a.btn-prim {
+  float: right;
+  margin-left: 20px;
+}
+
+.close-epg {
+  margin-top: 30px;
+}
+
+.header .admin {
+  display: inline-flex;
+  width: calc(100% - 177px);
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  vertical-align: top;
+  position: relative;
+  top: 50px;
+}
+
+.header .admin .nav-left {
+  margin-left: 22.5px;
+  font-size: 36.5px;
+  font-weight: bold;
+  letter-spacing: 7.3px;
+  color: #62bee7;
+  text-shadow: 3.5px 3.5px 0 #000000;
+  text-transform: uppercase;
+}
+
+.header .admin .nav-right button.btn-prim {
+  margin-left: 10px;
+  color: #ccc;
+  border: 3px solid #ccc;
+  padding: 5px 15px;
+  font-weight: bold;
+  z-index: 10000;
+  position: fixed;
+  bottom: 43px;
+  right: 40px;
+}
+
+.secondary-nav {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  height: 33px;
+  border-top: 1px solid #333;
+  padding-left: 25px;
+}
+
+.nav-item {
+  padding: 8px 15px;
+  display: inline-block;
+  line-height: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item.active{
+  background: #1A1A1A;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  font-weight: normal;
+}
+
+.admin.secondary-nav .nav-item {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.admin.secondary-nav .nav-item.active {
+  font-weight: 600;
+}
+
+.customModalInner {
+  z-index: 2;
+}
+
+.customModal .backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: default;
+  z-index: -1;
+}
+
+.clickable {
+  cursor: pointer;
+}

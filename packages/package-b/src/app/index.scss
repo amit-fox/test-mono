@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  width: auto;
+  padding: 0 30px;
+}
+
+.btn-prim, .btn-sec, .btn-prim:focus, .btn-sec:focus {
+  background: #000;
+  color: #aaa;
+  border: 2px solid #aaa;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 6px 8px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-size: 14px;
+  outline: 0 !important;
+}
+
+.btn-prim:hover, .btn-prim.active {
+  color: #eee;
+  background: #000;
+  border-color: #eee;
+  box-shadow: 2px -2px 0 rgba(41,171,226,0.9), -2px 2px 0 rgba(255,0,255,0.9);
+  outline: 0 !important;
+}
+
+.btn-prim.small, .btn-sec.small {
+  padding: 3px 8px;
+  font-size: 12px;
+  background: #333;
+}
+
+.btn-sec, .btn-sec:hover, .btn-sec:focus {
+  color: #fff;
+  border: none;
+  background: #333;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.btn-sec.active {
+  border: 2px solid #fff;
+  box-shadow: 2px -2px 0 rgba(41,171,226,0.9), -2px 2px 0 rgba(255,0,255,0.9);
+  margin-left: 20px;
+  position: relative;
+  top: -4px;
+}
+
+button.no-style {
+  background: transparent;
+  border: none;
+  outline: 0 !important;
+}
+
+.show-print {
+  display: none;
+}
+
+@media print{
+  .home {
+    position: relative;
+  }
+
+  .scrollable {
+    height: auto !important;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .show-print {
+    display: block;
+  }
+
+  @page {
+    size: landscape;
+  }
+}
+
+.customModal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 250px;
+  margin-left: -200px;
+  margin-top: -125px;
+  text-align: center;
+  background: #EFF3F4;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  z-index: 1;
+  color: #555;
+}
+
+.customModal.noTitle {
+  height: 200px;
+  margin-top: -100px;
+}
+
+.customModal.open {
+  display: block;
+}
+
+.customModalInner {
+  margin: 45px 20px;
+}
+
+.customModal p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.customModal button {
+  margin: 20px;
+}

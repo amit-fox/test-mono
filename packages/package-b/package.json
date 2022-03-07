@@ -1,0 +1,95 @@
+{
+  "name": "@foxdcg/package-b",
+  "version": "0.1.0",
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "browserslist": "^4.7.0",
+    "dotenv": "^8.2.0",
+    "history": "^4.6.1",
+    "react-router-dom": "^4.1.1",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:ci": "yarn install && cd release && CI=true npm test",
+    "test:coverage": "yarn test -- --coverage --watchAll=false"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "never",
+          "imports": "always-multiline",
+          "objects": "always-multiline"
+        }
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 100
+        }
+      ],
+      "eqeqeq": [
+        "error",
+        "always",
+        {
+          "null": "ignore"
+        }
+      ],
+      "no-await-in-loop": [
+        "error"
+      ],
+      "no-param-reassign": "error",
+      "react/self-closing-comp": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "lines-between-class-members": [
+        "error",
+        "always",
+        {
+          "exceptAfterSingleLine": true
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      "defaults"
+    ],
+    "development": [
+      "defaults"
+    ]
+  },
+  "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "node-sass": "^5.0.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.jsx",
+      "!src/index.jsx"
+    ]
+  }
+}
