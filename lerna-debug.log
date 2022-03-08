@@ -1,6 +1,5 @@
-46 error Error: Command failed with exit code 1: git add -- packages/package-b/package.json packages/package-b/package-lock.json packages/package-b/CHANGELOG.md packages/package-a/package.json packages/package-a/package-lock.json packages/package-a/CHANGELOG.md
+46 error Error: Command failed with exit code 1: git add -- packages/package-a/package.json packages/package-a/package-lock.json packages/package-b/package.json packages/package-b/package-lock.json packages/package-b/CHANGELOG.md packages/package-a/CHANGELOG.md
 46 error The following paths are ignored by one of your .gitignore files:
-46 error packages/package-a/package-lock.json
 46 error packages/package-b/package-lock.json
 46 error Use -f if you really want to add them.
 46 error     at makeError (/mnt/c/Users/user/Documents/test-mono/node_modules/execa/lib/error.js:60:11)
