@@ -1,9 +1,9 @@
 {
-  "name": "@foxdcg/package-a",
+  "name": "@test-33/package-a",
   "version": "0.1.0",
   "private": true,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "dependencies": {
     "react": "^17.0.1",
