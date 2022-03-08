@@ -1,18 +1,18 @@
 {
   "name": "@test-33/package-b",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
     "browserslist": "^4.7.0",
     "dotenv": "^8.2.0",
     "history": "^4.6.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^4.1.1",
+    "react-scripts": "4.0.3",
     "typescript": "^3.6.3"
   },
   "scripts": {
